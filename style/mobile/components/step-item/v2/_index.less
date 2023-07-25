@@ -40,7 +40,7 @@
 
   &--horizontal {
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
   }
 
@@ -86,7 +86,7 @@
     border-style: solid;
     box-sizing: border-box;
 
-    &--finish {
+    &--process {
       background-color: @step-item-process-dot-border-color;
     }
 
@@ -133,7 +133,7 @@
   }
 
   &__description {
-    color: @step-item-descrition-color;
+    color: @step-item-description-color;
     line-height: 20px;
     font-size: @font-size-s;
 
@@ -166,7 +166,8 @@
       top: calc(@step-item-dot-size / 2);
     }
 
-    &--finish {
+    &--finish,
+    &--reverse&--process {
       background-color: @step-item-finish-line-color;
     }
 
